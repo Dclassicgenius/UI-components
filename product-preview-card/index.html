@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <meta name="author" content="Patrick Amaechi" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Product preview card component</title>
+  </head>
+  <body>
+    <article class="main">
+      <section class="hero">
+        <figure class="hero__figure">
+          <img
+            src="images/image-product-mobile.jpg"
+            alt="Gabrielle essence eau de parfum image"
+            class="mobile"
+          />
+          <img
+            src="images/image-product-desktop.jpg"
+            alt="Gabrielle essence eau de parfum image"
+            class="desktop"
+            width="600"
+            height="900"
+          />
+          <figcaption class="offscreen">
+            Gabrielle essence eau de parfum image
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="section-bottom">
+        <p class="section-bottom__p1">PERFUME</p>
+        <h1 class="section-bottom__h1">Gabrielle Essence Eau De Parfum</h1>
+        <p class="section-bottom__p2">
+          A floral, solar and voluptuos interpretation composed by Oliver Polge,
+          Perfumer-Creator for the House of CHANEL
+        </p>
+        <div class="div-price">
+          <p class="price">$149.99</p>
+          <p class="discount">$169.99</p>
+        </div>
+        <button class="btn">
+          <img
+            src="images/icon-cart.svg"
+            alt="icon cart"
+            class="btn-image"
+          />Add to Cart
+        </button>
+      </section>
+    </article>
+  </body>
+</html>

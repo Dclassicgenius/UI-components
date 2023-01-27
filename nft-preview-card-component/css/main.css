@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+
+/* || RESET */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    opacity: 1;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+/* || VARIABLES */
+
+:root {
+    /* ||COLORS */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-mainBG: hsl(217, 54%, 11%);
+    --Very-dark-blue-cardBG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+
+    /* || FONTS */
+    --FF: 'Outfit', sans-serif;
+    --FS: 18px;
+}
+
+
+
+/* || UTILITY CLASSES */
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+/* || GENERAL */
+
+body {
+    background-color: var(--Very-dark-blue-mainBG);
+    min-height: 75vh;
+    max-width: 375px;
+    margin: 7% auto;
+}
+
+main {
+    background-color: var(--Very-dark-blue-cardBG);
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+h1 {
+    font-family: var(--FF);
+    font-size: clamp(1rem, 10vw, 2rem);
+    font-weight: 600;
+    text-align: left;
+    line-height: 1.5;
+    color: var(--White);
+    margin-top: 20px;
+}
+
+p {
+    font-family: var(--FF);
+    color: var(--Soft-blue);
+    font-size: var(--FS);
+    line-height: 1.5;
+    text-align: left;
+    margin-top: 15px;
+}
+
+hr {
+    border:  1px solid var(--Very-dark-blue-line);
+}
+
+.display-flex {
+    display: flex;
+}
+
+.div-mid {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.div-p {
+    justify-content: center;
+    align-items: center;
+}
+
+p > img {
+    margin-right: 10px;
+}
+
+div > p:first-child {
+    color: var(--Cyan);
+}
+
+.section-bottom > p > img {
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--White);
+}
+
+.section-bottom > p > span {
+    color: var(--White);
+}
+
+a {
+    text-decoration: none;
+    color: var(--White);
+}
+
+a:hover, a:active, a:focus {
+    color: var(--Cyan);
+}
+
+.container {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background-color: var(--Cyan);
+    cursor: pointer;
+    z-index: 0;
+}
+
+
+.container:hover .overlay {
+    opacity: 0.5;
+}
+
+
