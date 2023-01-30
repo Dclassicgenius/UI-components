@@ -85,12 +85,14 @@ h6 {
 
 /* || GENERAL STYLING */
 body {
+    display: grid;
     font-family: var(--ff-paragraph);
     font-weight: var(--fw-regular);
     font-size: 0.875rem;
     color: var(--paragraph-white);
     background-color: var(--ff-heading);
     margin: 3rem 1rem;
+    place-content: center;
 }
 
 h1 {
@@ -99,20 +101,26 @@ h1 {
 }
 
 main {
-    max-width: 375px;
-    /* min-height: 100vh; */
-    border-radius: 0.75rem;
+    max-width: 600px;
+    border-radius: 0.5rem;
     overflow: hidden;
 }
+
+@media only screen and (min-width: 490px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .button {
+        margin: 5rem 0 1rem 0;
+    }
+  }
+  
 
 .button {
     cursor: pointer;
     text-decoration: none;
-    display: inline-flex;
-    gap: 0.75rem;
-    justify-content: center;
-    align-items: center;
-  
+    display: block;
     border: 0;
     border-radius: 1.5rem;
     padding: 0.5em 2em;
@@ -127,7 +135,7 @@ main {
 
 .card {
     gap: 1rem;
-    padding: 2rem 1.7rem;
+    padding: 2.5rem;
 }
 .card-top {
     background-color: var(--Bright-orange);
