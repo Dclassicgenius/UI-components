@@ -89,7 +89,7 @@ body {
     display: flex;
     font-family: var(--ff-paragraph);
     font-weight: var(--fw-regular);
-    font-size: 0.875rem;
+    font-size: 1.25rem;
     color: var(--paragraph-white);
     background-color: var(--ff-heading);
     margin: 3rem 1rem;
@@ -99,10 +99,11 @@ body {
 h1 {
     font-family: var(--ff-heading);
     color: var(--Very-light-gray);
+    font-size: 30px;
 }
 
 main {
-    max-width: 600px;
+    max-width: 900px;
     border-radius: 0.5rem;
     overflow: hidden;
     margin: 0 auto;
@@ -120,12 +121,13 @@ main {
   
 
 .button {
+    display: inline-block;
     cursor: pointer;
     text-decoration: none;
     display: block;
     border: 0;
-    border-radius: 1.5rem;
-    padding: 0.5em 2em;
+    border-radius: 2rem;
+    padding: 15px 15px;
     background-color: var(--Very-light-gray);
     font-weight: var(--fw-regular);
     font-size: 0.825rem;
@@ -137,8 +139,13 @@ main {
 
 .card {
     gap: 1rem;
-    padding: 2.5rem;
+    padding: 4rem;
 }
+
+.card p {
+    line-height: 1.6;
+}
+
 .card-top {
     background-color: var(--Bright-orange);
 }
