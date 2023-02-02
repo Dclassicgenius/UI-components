@@ -43,42 +43,42 @@ img {
 
 /* || GENERAL */
 
-h1, h2 {
-    font-family: var(--FF);
-    font-size: clamp(1rem, 10vw, 2rem);
-    font-weight: 700;
-    text-align: center;
+body {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Light-gray);
     line-height: 1.5;
+    text-align: center;
+    font-family: var(--FF);
 }
 
+h1, h2 {
+    font-size: clamp(1rem, 10vw, 2rem);
+    font-weight: 700;
+}
 
 p {
-    font-family: var(--FF);
     color: var(--Grayish-blue);
     font-size: var(--FS);
-    line-height: 1.5;
-    text-align: center;
     margin-top: 15px;
 }
 
-body {
-    min-height: 75vh;
-    max-width: 400px;
-    background-color: var(--Light-gray);
-    margin: 7% auto;
-    
+.container {
+    margin: 0 auto;
+    max-width: 365px;
 }
 
-main {
+.card {
+    display: grid;
+    gap: 2rem;
+    padding: 1.5rem;
     background-color: var(--White);
-    padding: 2rem;
     border-radius: 20px;
+    margin: 0 2em;
 }
 
-main > section {
-    margin-bottom: 15px;
-}
-
-.section-bottom {
-    padding: 20px;
+.footer p {
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
