@@ -9,38 +9,35 @@
   
   <title>NFT preview card component</title>
 
-  <body>
-    <main>
-        <figure class="container">
-          <img class="image" src="images/image-equilibrium.jpg" alt="Image of Equlibrium nft">
-            <div class="overlay">
-              <div class="content">
-                <img class="content-image" src="images/icon-view.svg" alt="Icon view">
-              </div>
-            </div>
-          <figcaption class="offscreen">Image of equilibrium</figcaption>
-        </figure>
-
-      <section>
-        <h1><a href="#">Equilibrium #3429</a></h1>
-        <p>Our Equilibrium collection promotes balance and calm</p>
-
-        <div class="display-flex div-mid">
-          <p class="display-flex div-p">
-              <img src="images/icon-ethereum.svg" alt="Icon of ethereum"> 0.04 ETH
-          </p>
-          <p class="display-flex div-p">
-              <img src="images/icon-clock.svg" alt="clock countdown icon"> 3 days left
-          </p>
+  <body class="display-flex">
+    <main class="container">
+      <div class="card">
+        <div class="img-top">
+          <img src="images/image-equilibrium.jpg" alt="Image of Equlibrium nft">
+          <div class="img-overlay">
+            <img src="images/icon-view.svg" alt="Icon view">
+          </div>
         </div>
-      </section>
 
-      <hr>
-      <section class="section-bottom">
-        <p class="display-flex">
-            <img src="images/image-avatar.png" alt="Image avatar"> Creation of &nbsp; <span><a href="#">Jules Wyvern</a></span>
-        </p>
-      </section>
+        <div class="text">
+          <h1><a href="#">Equilibrium #3429</a></h1>
+          <p>Our Equilibrium collection promotes balance and calm.</p>
+
+          <div class="display-flex eth">
+            <p class="display-flex eth__p">
+                <img src="images/icon-ethereum.svg" alt="Icon of ethereum"> 0.04 ETH
+            </p>
+            <p class="display-flex eth__p">
+                <img src="images/icon-clock.svg" alt="clock countdown icon"> 3 days left
+            </p>
+          </div>
+        </div>
+
+        <div class="author display-flex">
+          <img src="images/image-avatar.png" alt="Image avatar">
+          <p>Creation of <a href="#" class="name">Jules Wyvern</a></p>
+        </div>
+      </div>
     </main>
 
     
