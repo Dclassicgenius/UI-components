@@ -118,7 +118,7 @@ h1 {
     background-image: url(../images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
     background-position: 90% 0%;
-    background-size: 35%;
+    background-size: 8.5em;
 }
 
 .card-2 {
@@ -147,6 +147,7 @@ h1 {
 
     .card-1 {
         grid-area: card-1;
+        background-position: 80% 0%;
     }
 
     .card-2 {
