@@ -44,7 +44,6 @@ img {
 .display-flex {
     display: flex;
     gap: 1rem;
-    /* align-items: center; */
 }
 
 .grid-group {
@@ -55,6 +54,8 @@ img {
 /* || GENERAL */
 
 body {
+    display: flex;
+    align-items: center;
     background-color: var(--Light-grayish-blue);
     min-height: 100vh;
     font-family: var(--FF);
@@ -62,15 +63,25 @@ body {
     font-size: var(--FS);
 }
 
+p {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 1.145rem;
+    font-weight: 600;
+}
+
 .container {
     margin: 0 auto;
-    max-width: 450px;
+    max-width: 800px;
     padding: 4rem 1.5rem;
+    margin: 0 auto;
 }
 
 .card {
-    padding: 1.5rem 1.5rem;
-    border-radius: 1rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
 }
 
 .image img {
@@ -79,32 +90,19 @@ body {
     border-radius: 50%;
 }
 
-.profile__name p:first-child {
-    font-weight: 500;
+.profile__name p:first-child, .heading {
     color: var(--White);
 }
 .profile__name p:last-child {
     color: hsla(0, 0%, 100%, 0.5);
 }
 
-.profile__name-gray p:first-child {
+.profile__name-gray p:first-child, .heading-gray {
     color: var(--Very-dark-grayish-blue);
 }
 
 .profile__name-gray p:last-child {
     color: hsla(217, 19%, 35%, 0.5);;
-}
-
-.heading {
-    color: var(--White);
-    font-size: 1.145rem;
-    font-weight: 600;
-}
-
-.heading-gray {
-    color: var(--Very-dark-grayish-blue);
-    font-size: 1.145rem;
-    font-weight: 600;
 }
 
 .review {
@@ -119,7 +117,8 @@ body {
     background-color: var(--Moderate-violet);
     background-image: url(../images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: 90% 0%;
+    background-size: 35%;
 }
 
 .card-2 {
@@ -136,4 +135,33 @@ body {
 
 .card-5 {
     background-color: var(--White);
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        "card-1 card-1 card-2 card-5"
+        "card-3 card-4 card-4 card-5";
+    }
+
+    .card-1 {
+        grid-area: card-1;
+    }
+
+    .card-2 {
+        grid-area: card-2;
+    }
+
+    .card-3 {
+        grid-area: card-3;
+    }
+
+    .card-4 {
+        grid-area: card-4;
+    }
+
+    .card-5 {
+        grid-area: card-5;
+    }
 }
