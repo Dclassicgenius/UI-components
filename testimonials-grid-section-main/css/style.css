@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+/* || RESET */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+:root {
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+
+    /* || Neutral */
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+
+    /* FONTS */
+    --FF: 'Barlow Semi Condensed', sans-serif;
+    --FS:0.8125rem;
+
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.display-flex {
+    display: flex;
+    gap: 1rem;
+    /* align-items: center; */
+}
+
+.grid-group {
+    display: grid;
+    gap: 1.2rem;
+}
+
+/* || GENERAL */
+
+body {
+    background-color: var(--Light-grayish-blue);
+    min-height: 100vh;
+    font-family: var(--FF);
+    line-height: 1.2;
+    font-size: var(--FS);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 450px;
+    padding: 4rem 1.5rem;
+}
+
+.card {
+    padding: 1.5rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.image img {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.profile__name p:first-child {
+    font-weight: 500;
+    color: var(--White);
+}
+.profile__name p:last-child {
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.profile__name-gray p:first-child {
+    color: var(--Very-dark-grayish-blue);
+}
+
+.profile__name-gray p:last-child {
+    color: hsla(217, 19%, 35%, 0.5);;
+}
+
+.heading {
+    color: var(--White);
+    font-size: 1.145rem;
+    font-weight: 600;
+}
+
+.heading-gray {
+    color: var(--Very-dark-grayish-blue);
+    font-size: 1.145rem;
+    font-weight: 600;
+}
+
+.review {
+    color: hsla(0, 0%, 100%, 0.7);
+}
+
+.review-gray {
+    color: hsla(217, 19%, 35%, 0.7);
+}
+
+.card-1 {
+    background-color: var(--Moderate-violet);
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.card-2 {
+    background-color: var(--Very-dark-grayish-blue);
+}
+
+.card-3 {
+    background-color: var(--White);
+}
+
+.card-4 {
+    background-color: var(--Very-dark-blackish-blue);
+}
+
+.card-5 {
+    background-color: var(--White);
+}
