@@ -17,8 +17,8 @@
     <title>Frontend Mentor | Clipboard landing page</title>
   </head>
   <body>
-    <header>
-      <img src="images/logo.svg" alt="logo of copy" />
+    <header class="display-flex">
+      <img src="images/logo.svg" alt="logo of copy" class="logo" />
       <!-- <picture class="copy__img">
         <source
           srcset="images/bg-header-desktop.png"
@@ -31,15 +31,15 @@
         Clipboard allows you to track and organize everything you copy.
         Instantly access your clipboard on all your devices.
       </p>
-      <div class="download-buttons">
-        <button>Download for iOS</button>
-        <button>Download for Mac</button>
-      </div>
+      <!-- <div class="download-buttons grid-group"> -->
+      <button class="btn__ios">Download for iOS</button>
+      <button class="btn__mac">Download for Mac</button>
+      <!-- </div> -->
     </header>
 
     <main>
-      <section class="functions">
-        <div class="function__text">
+      <section class="functions grid-group">
+        <div class="function__text grid-group">
           <h2>Keep track of your snippets</h2>
           <p>
             Clipboard instantly stores any item you copy in the cloud, meaning
@@ -48,23 +48,23 @@
           </p>
         </div>
 
-        <figure>
-          <img src="images/image-computer.png" alt="image of computer" />
-          <figcaption>Image of a computer</figcaption>
-        </figure>
+        <!-- <figure> -->
+        <img src="images/image-computer.png" alt="image of computer" />
+        <!-- <figcaption class="offscreen">Image of a computer</figcaption>
+        </figure> -->
 
-        <div class="function__text">
+        <div class="function__text grid-group">
           <h2>Quick Search</h2>
           <p>
             Easily search your snippets by content, category, web address,
             application, and more.
           </p>
         </div>
-        <div class="function__text">
+        <div class="function__text grid-group">
           <h2>iCloud Sync</h2>
           <p>Instantly saves and syncs snippets across all your devices.</p>
         </div>
-        <div class="function__text">
+        <div class="function__text grid-group">
           <h2>Complete History</h2>
           <p>
             Retrieve any snippets from the first moment you started using the
@@ -73,30 +73,32 @@
         </div>
       </section>
 
-      <section class="function-devices">
-        <div class="function__text">
+      <section class="function-devices grid-group">
+        <div class="function__text grid-group">
           <h2>Access Clipboard anywhere</h2>
           <p>
             Whether you’re on the go, or at your computer, you can access all
             your Clipboard snippets in a few simple clicks.
           </p>
         </div>
+        <!-- 
+        <figure> -->
+        <img
+          src="images/image-devices.png"
+          alt="images of computer and mobile devices"
+        />
+        <!-- <figcaption class="offscreen">
+            images of computer and mobile devices
+          </figcaption>
+        </figure> -->
 
-        <figure>
-          <img
-            src="images/image-devices.png"
-            alt="images of computer and mobile devices"
-          />
-          <figcaption>images of computer and mobile devices</figcaption>
-        </figure>
-
-        <div class="function__text">
+        <div class="function__text grid-group">
           <h2>Supercharge your workflow</h2>
           <p>We’ve got the tools to boost your productivity.</p>
         </div>
       </section>
 
-      <section class="features">
+      <section class="features grid-group">
         <div class="feature__text">
           <img
             src="images/icon-blacklist.svg"
@@ -133,7 +135,7 @@
         </div>
       </section>
 
-      <section class="sponsors">
+      <section class="sponsors grid-group">
         <img src="images/logo-google.png" alt="logo of google" />
         <img src="images/logo-ibm.png" alt="logo of IBM" />
         <img src="images/logo-microsoft.png" alt="logo of microsoft" />
@@ -145,21 +147,21 @@
       </section>
 
       <section class="title-bottom">
-        <h4>Clipboard for iOS and Mac OS</h4>
+        <p>Clipboard for iOS and Mac OS</p>
         <p>
           Available for free on the App Store. Download for Mac or iOS, sync
           with iCloud and you’re ready to start adding to your clipboard.
         </p>
-        <div class="download-buttons">
-          <button>Download for iOS</button>
-          <button>Download for Mac</button>
-        </div>
+        <!-- <div class="download-buttons grid-group"> -->
+        <button class="btn__ios">Download for iOS</button>
+        <button class="btn__mac">Download for Mac</button>
+        <!-- </div> -->
       </section>
     </main>
 
     <footer>
-      <img src="" alt="" class="footer__image" />
-      <div class="footer__links">
+      <img src="images/logo.svg" alt="" class="footer__image logo" />
+      <div class="footer__links grid-group">
         <p class="footer__text">FAQs</p>
         <p class="footer__text">Contact Us</p>
         <p class="footer__text">Privacy Policy</p>
@@ -167,21 +169,9 @@
         <p class="footer__text">Install Guide</p>
       </div>
       <div class="footer__icons">
-        <img
-          src="images/icon-facebook.svg"
-          alt="icon of facebook"
-          class="footer__icons"
-        />
-        <img
-          src="images/icon-twitter.svg"
-          alt="icon of twitter"
-          class="footer__icons"
-        />
-        <img
-          src="images/icon-instagram.svg"
-          alt="image of instagram"
-          class="footer__icons"
-        />
+        <img src="images/icon-facebook.svg" alt="icon of facebook" />
+        <img src="images/icon-twitter.svg" alt="icon of twitter" />
+        <img src="images/icon-instagram.svg" alt="image of instagram" />
       </div>
     </footer>
   </body>
