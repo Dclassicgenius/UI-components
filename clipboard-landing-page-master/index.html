@@ -19,27 +19,20 @@
   <body>
     <header class="display-flex">
       <img src="images/logo.svg" alt="logo of copy" class="logo" />
-      <!-- <picture class="copy__img">
-        <source
-          srcset="images/bg-header-desktop.png"
-          media="(min-width: 600px)"
-        />
-        <img src="images/bg-header-mobile.png" alt="background image of copy" />
-      </picture> -->
       <h1>A history of everything you copy</h1>
       <p>
         Clipboard allows you to track and organize everything you copy.
         Instantly access your clipboard on all your devices.
       </p>
-      <!-- <div class="download-buttons grid-group"> -->
-      <button class="btn__ios">Download for iOS</button>
-      <button class="btn__mac">Download for Mac</button>
-      <!-- </div> -->
+      <div class="download-buttons display-flex">
+        <button class="btn__ios">Download for iOS</button>
+        <button class="btn__mac">Download for Mac</button>
+      </div>
     </header>
 
     <main>
       <section class="functions grid-group">
-        <div class="function__text grid-group">
+        <div class="function__text grid-group func-main">
           <h2>Keep track of your snippets</h2>
           <p>
             Clipboard instantly stores any item you copy in the cloud, meaning
@@ -48,28 +41,31 @@
           </p>
         </div>
 
-        <!-- <figure> -->
-        <img src="images/image-computer.png" alt="image of computer" />
-        <!-- <figcaption class="offscreen">Image of a computer</figcaption>
-        </figure> -->
+        <div class="img-text grid-group">
+          <div class="img-left">
+            <img src="images/image-computer.png" alt="image of computer" />
+          </div>
 
-        <div class="function__text grid-group">
-          <h2>Quick Search</h2>
-          <p>
-            Easily search your snippets by content, category, web address,
-            application, and more.
-          </p>
-        </div>
-        <div class="function__text grid-group">
-          <h2>iCloud Sync</h2>
-          <p>Instantly saves and syncs snippets across all your devices.</p>
-        </div>
-        <div class="function__text grid-group">
-          <h2>Complete History</h2>
-          <p>
-            Retrieve any snippets from the first moment you started using the
-            app.
-          </p>
+          <div class="text grid-group">
+            <div class="function__text display-flex">
+              <h2>Quick Search</h2>
+              <p>
+                Easily search your snippets by content, category, web address,
+                application, and more.
+              </p>
+            </div>
+            <div class="function__text display-flex">
+              <h2>iCloud Sync</h2>
+              <p>Instantly saves and syncs snippets across all your devices.</p>
+            </div>
+            <div class="function__text display-flex">
+              <h2>Complete History</h2>
+              <p>
+                Retrieve any snippets from the first moment you started using
+                the app.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -81,16 +77,11 @@
             your Clipboard snippets in a few simple clicks.
           </p>
         </div>
-        <!-- 
-        <figure> -->
+
         <img
           src="images/image-devices.png"
           alt="images of computer and mobile devices"
         />
-        <!-- <figcaption class="offscreen">
-            images of computer and mobile devices
-          </figcaption>
-        </figure> -->
 
         <div class="function__text grid-group">
           <h2>Supercharge your workflow</h2>
@@ -152,10 +143,11 @@
           Available for free on the App Store. Download for Mac or iOS, sync
           with iCloud and you’re ready to start adding to your clipboard.
         </p>
-        <!-- <div class="download-buttons grid-group"> -->
-        <button class="btn__ios">Download for iOS</button>
-        <button class="btn__mac">Download for Mac</button>
-        <!-- </div> -->
+
+        <div class="download-buttons display-flex">
+          <button class="btn__ios">Download for iOS</button>
+          <button class="btn__mac">Download for Mac</button>
+        </div>
       </section>
     </main>
 
