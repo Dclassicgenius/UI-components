@@ -12,6 +12,8 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="css/style.css" />
+
     <script
       src="https://kit.fontawesome.com/76913b47b8.js"
       crossorigin="anonymous"
@@ -23,28 +25,30 @@
   </head>
   <body>
     <header>
-      <div>
+      <div class="try-free flex-group">
         <figure>
           <img src="images/logo.svg" alt="logo of huddle" />
-          <figcaption>logo of huddle</figcaption>
-          <button class="btn btn__trial">Try It Free</button>
+          <figcaption class="offscreen">logo of huddle</figcaption>
         </figure>
+        <button class="btn__trial">Try It Free</button>
       </div>
 
       <section class="mission">
-        <div>
+        <div class="grid-group">
           <h1>Build The Community Your Fans Will Love</h1>
           <p>
             Huddle re-imagines the way we build communities. You have a voice,
             but so does your audience. Create connections with your users as you
             engage in genuine discussion.
           </p>
-          <button class="btn__get-started btn">Get Started For Free</button>
+          <div class="btn">
+            <button class="btn__get-started">Get Started For Free</button>
+          </div>
         </div>
 
         <figure>
           <img src="images/illustration-mockups.svg" alt="mockup images" />
-          <figcaption>mockup images</figcaption>
+          <figcaption class="offscreen">mockup images</figcaption>
         </figure>
       </section>
     </header>
@@ -57,7 +61,7 @@
               src="images/illustration-grow-together.svg"
               alt="image of two people standing and some illustration between them"
             />
-            <figcaption>
+            <figcaption class="offscreen">
               image of two people standing and some illustration between them
             </figcaption>
           </figure>
@@ -74,7 +78,7 @@
               src="images/illustration-flowing-conversation.svg"
               alt="image of 4 people sitting round a table having a conversation"
             />
-            <figcaption>
+            <figcaption class="offscreen">
               image of 4 people sitting round a table having a conversation
             </figcaption>
           </figure>
@@ -85,13 +89,13 @@
             flow.
           </p>
         </article>
-        <article class="card">
+        <article class="card card-3">
           <figure>
             <img
               src="images/illustration-your-users.svg"
               alt="image of 3 people standing in a circle holding white canvases"
             />
-            <figcaption>
+            <figcaption class="offscreen">
               image of 3 people standing in a circle holding white canvases
             </figcaption>
           </figure>
@@ -106,7 +110,9 @@
 
       <aside class="card__cta">
         <h2>Ready To Build Your Community?</h2>
-        <button class="btn__get-started btn">Get Started For Free</button>
+        <div class="btn">
+          <button class="btn__get-started">Get Started For Free</button>
+        </div>
       </aside>
     </main>
 
@@ -114,33 +120,28 @@
       <section class="contact">
         <figure>
           <img src="images/logo.svg" alt="logo of huddle" />
-          <figcaption>logo of huddle</figcaption>
+          <figcaption class="offscreen">logo of huddle</figcaption>
         </figure>
-        <address>
-          <div class="address__group">
-            <!-- <img src="images/icon-location.svg" alt="icon of location" /> -->
+        <address class="grid-group">
+          <div class="address__group flex-group">
+            <img src="images/icon-location.svg" alt="icon of location" />
             <p class="address__text">
-              <i class="fas fa-map-marker-alt"></i>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
           </div>
-          <div class="address__group">
+          <div class="address__group flex-group">
             <img src="images/icon-phone.svg" alt="icone of telephone" />
-            <p class="address__text">
-              <i class="fas fa-phone-volume"></i> +1-543-123-4567
-            </p>
+            <p class="address__text">+1-543-123-4567</p>
           </div>
-          <div class="address__group">
+          <div class="address__group flex-group">
             <img src="images/icon-email.svg" alt="icon of gmail" />
-            <p class="address__text">
-              <i class="fas fa-envelope"></i> example@huddle.com
-            </p>
+            <p class="address__text">example@huddle.com</p>
           </div>
         </address>
       </section>
 
-      <section class="footer__links">
+      <section class="footer__links grid-group">
         <a href="#">About Us</a>
         <a href="#">What We Do</a>
         <a href="#">FAQ</a>
@@ -149,7 +150,7 @@
         <a href="#">Contact Us</a>
       </section>
 
-      <section class="socials">
+      <section class="socials flex-group">
         <i class="fab fa-facebook"></i>
         <i class="fab fa-twitter"></i>
         <i class="fab fa-instagram"></i>
