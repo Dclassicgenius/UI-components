@@ -65,10 +65,8 @@ footer {
     background-color: #00252E;
     color: whitesmoke;
     text-align:left;
-    margin-top: 10em;
-    padding-top: 10em;
-    padding-inline: 1.2em;
-    padding-bottom: 3em;
+    margin-top: -6.5em;
+    padding: 6em 1.2em 3em;
 }
 
 h1, h2{
@@ -77,16 +75,12 @@ h1, h2{
     font-weight: var(--FW-SEMI-BOLD);
 }
 
-
 header {
     background-image: url("../images/bg-hero-mobile.svg");
     background-color: var(--Very-Pale-Cyan);
-    padding-block: 1em;
+    margin-bottom: 2em;
 }
 
-/* main {
-    position: relative;
-} */
 
 button {
     border: none;
@@ -118,6 +112,13 @@ button {
 }
 /* ||GENERAL */
 
+.container {
+    padding: 1em;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
 .btn__trial {
     background-color: white;
     padding: 0.5em 3em;
@@ -128,12 +129,11 @@ button {
 
 .btn__get-started {
     background-color: var(--Pink);
-    padding: 0.75em 3em;
+    padding: 1em 2em;
     color: white;
 }
 
 .try-free {
-    padding: 1em;
     justify-content: space-between;
     margin-inline: 1em;
 }
@@ -148,49 +148,45 @@ button {
 }
 
 .mission figure {
-    margin-block: 2em;
+    margin-block: 1.5em;
 }
 
 .mission div {
     padding: 1em;
 }
 
-.container {
-     margin: 5em 1.5em;
-}
-
 .card {
-    /* border: 2px solid black; */
-    border-radius: 2rem;
-    box-shadow: -1px -1px 5px 1px rgba(161,155,155,0.31);
-    padding: 3em 1.75em;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    padding: 3em;
     margin-bottom: 3em;
 }
 
 .card figure {
-    margin-bottom: 3em;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .card h2 {
-    margin-block: 0.75em;
+    margin: 3em 0 1em 0;
 }
 
 
 .card__cta {
-    position: absolute;
-    border-radius: 2rem;
-    box-shadow: -1px -1px 5px 1px rgba(161,155,155,0.31);
-    margin-inline: 1em;
-    padding: 3rem 1.1rem;
-    font-size: 1rem;
-    z-index: 1;
+    display: inline-block;
+    padding: 2em;
+    font-size: 0.825rem;
     background-color: white;
-    left: 0;
-    right: 0;    
+}
+
+.card__cta h2 {
+    margin-top: 0;
+    text-align: center;
 }
 
 .card__cta div {
     margin-top: 2em;
+    text-align: center;
 }
 
 .contact figure {
@@ -233,16 +229,9 @@ button {
     padding-inline: 3em;
     font-size: 0.825rem;
     text-align: center;
-    /* margin-bottom: 3em; */
 }
 
 @media screen and (min-width: 576px) {
-
-    body {
-        max-width: 750px;
-        margin: 0 auto;
-    }
-
 
     .mission {
         display: flex;
@@ -266,15 +255,41 @@ button {
 
     .card {
         display: flex;
-        justify-content: space-between;
-        gap: 10em;
+        gap: 5em;
         align-items: center;
         text-align: left;
         font-size: 0.825rem;
         padding-left: 5em;
     }
 
-    .card figure {
-        width: 50%;
+    .card__1 figure, .card__3 figure {
+        order: 2;
+    }
+
+    .card__cta {
+        display: inline-block;
+    }
+
+    footer {
+        font-size: 0.75rem;
+        margin-top: -10.5em;
+        padding: 10em 1.2em 3em;
+    }
+
+    .footer__links {
+        grid-template-columns: 1fr 1fr;
+        place-content: center;
+        margin-left: 2rem;
+    }
+
+    .footer__group {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3em;
+    }
+
+    .copyright {
+        margin-block: 2em;
+        text-align: right;
     }
 }
