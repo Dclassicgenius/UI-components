@@ -218,7 +218,7 @@ button {
 }
 
 .fab {
-
+    cursor: pointer;
     display: inline-block;
     border: 1px solid white;
     border-radius: 50%;
@@ -229,6 +229,21 @@ button {
     padding-inline: 3em;
     font-size: 0.825rem;
     text-align: center;
+}
+
+button:hover,
+button:focus-visible {
+    opacity: 0.5;
+}
+
+a:hover,
+a:focus-visible {
+    text-decoration: underline;
+}
+
+i:hover,
+i:focus-visible {
+    color: var(--Pink);
 }
 
 @media screen and (min-width: 576px) {
